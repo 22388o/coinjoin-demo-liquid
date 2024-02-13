@@ -38,7 +38,7 @@ txb.addOutput(output2);
 
 // Sign inputs
 // You would need to implement the logic for participants to sign their inputs
-
+const input = {
 // Finalize the transaction
 txb.setVersion(2); // Optional: Set transaction version
 const tx = txb.buildIncomplete();
