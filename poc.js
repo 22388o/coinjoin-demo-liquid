@@ -1,7 +1,7 @@
 const Liquid = require('liquidjs-lib');
 
 // Initialize Liquid network
-const network = Liquid.Networks.liquid;
+const network = Liquid.Networks.Testnet;
 
 // Create new transaction builder
 const txb = new Liquid.TransactionBuilder(network);
@@ -37,8 +37,6 @@ txb.addOutput(output1);
 txb.addOutput(output2);
 
 // Sign inputs
-// NOTE: Signing inputs would require private keys
-// For CoinJoin, this would be handled by participants
 // You would need to implement the logic for participants to sign their inputs
 
 // Finalize the transaction
